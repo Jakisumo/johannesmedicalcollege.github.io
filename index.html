@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Johannes College of Medical and Health Sciences</title>
+
+  <!-- FontAwesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      position: relative;
+    }
+
+    /* Top Contact Ribbon */
+    .contact-ribbon {
+      background-color: gold;
+      color: darkblue;
+      padding: 8px 20px;
+      font-size: 0.9em;
+      text-align: left;
+    }
+
+    .background-overlay {
+      background: url('https://assets.onecompiler.app/43f77kxdf/43f7444xv/Background.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      color: white;
+      backdrop-filter: brightness(0.6);
+    }
+
+    /* Logo on left */
+    .logo {
+      position: fixed;
+      top: 70px;
+      left: 10px;
+      z-index: 1001;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    header {
+      background-color: rgba(0, 0, 51, 0.85);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      margin-top: 40px; /* Space for contact ribbon */
+    }
+
+    header h1 {
+      color: gold;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      background-color: gold;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: white;
+      color: darkblue;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      margin: 40px 0;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .fade-in-section.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    section h2 {
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    /* Floating Social Media Icons */
+    .social-icons {
+      position: fixed;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+    }
+
+    .social-icons a {
+      background-color: gold;
+      color: darkblue;
+      padding: 10px;
+      border-radius: 50%;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      font-size: 1.5em;
+      line-height: 30px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icons a:hover {
+      background-color: white;
+      color: darkblue;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .social-icons {
+        right: 5px;
+      }
+
+      .logo img {
+        width: 90px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Contact Info Ribbon -->
+  <div class="contact-ribbon">
+    📧 Email: johannesmedicalcollege@gmail.com | ☎️ Call: +254 727 829 793 | +254 739 216 209
+  </div>
+
+  <!-- Logo on the left -->
+  <div class="logo">
+    <img src="https://assets.onecompiler.app/43f77kxdf/43f7444xv/Logo.jpeg" alt="Johannes College Logo">
+  </div>
+
+  <div class="background-overlay">
+    <header>
+      <h1>Johannes College of Medical and Health Sciences</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#student-life">Student Life</a></li>
+          <li><a href="#apply">Apply</a></li>
+          <li><a href="#application-form">Application Form</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="fade-in-section" id="about">
+        <h2>About Us</h2>
+        <p>Johannes College of Medical and Health Sciences is committed to excellence in education and healthcare training.</p>
+      </section>
+
+      <section class="fade-in-section" id="programs">
+        <h2>Our Programs</h2>
+        <p>Explore a wide range of accredited medical and health science programs designed to prepare students for successful careers.</p>
+      </section>
+
+      <section class="fade-in-section" id="goals">
+        <h2>Our Goals</h2>
+        <p>To produce competent healthcare professionals who will positively impact communities around the globe.</p>
+      </section>
+
+      <section class="fade-in-section" id="student-life">
+        <h2>Student Life</h2>
+        <p>Join a vibrant, inclusive student community with access to clubs, activities, and leadership opportunities.</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Floating Social Media Icons -->
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+  </div>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const sections = document.querySelectorAll(".fade-in-section");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Johannes College of Medical and Health Sciences</title>
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(rgba(70, 128, 255, 0.969), rgba(47, 47, 255, 0.9)), url('https://images.unsplash.com/photo-1588776814546-d739c50c8e4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0,0,51,0.9);
+      font-size: 1.2em;
+      font-weight: 600;
+      color: gold;
+    }
+
+    /* Home Section */
+    #home {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    #home h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: gold;
+    }
+
+    #home p {
+      font-size: 1.4em;
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+
+    .home-graphic {
+      margin-top: 20px;
+    }
+
+    .home-graphic img {
+      width: 300px;
+      max-width: 90%;
+      border-radius: 20px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    footer {
+      background-color: rgba(0,0,51,0.9);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @media (max-width: 600px) {
+      #home h2 {
+        font-size: 2.2em;
+      }
+      #home p {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    Welcome to Johannes College of Medical and Health Sciences
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Empowering Healthcare Futures</h2>
+    <p>Join Johannes College and become a leader in compassionate and innovative healthcare training. Shape the world through knowledge and care!</p>
+
+    <div class="home-graphic">
+      <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Healthcare Graphic">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Johannes College of Medical and Health Sciences. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Johannes College of Medical and Health Sciences is dedicated to training competent healthcare professionals with strong ethical values and a passion for community service.</p>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs">
+    <h2>Programs Offered</h2>
+    <ul>
+      <li>Certified Nursing Assistant</li>
+      <li>Nursing</li>
+      <li>Pharmacy</li>
+      <li>Medical Laboratory Sciences</li>
+      <li>Clinical Medicine</li>
+      <li>Certificate in Nutrition and Dietetics</li>
+      <li>Diploma in Nutrition and Dietetics</li>
+      <li>Diploma in Community Health</li>
+      <li>Certificate in Community Health</li>
+      <li>Certificate in Health Records with IT</li>
+      <li>Diploma in Health Records with IT</li>
+      <li>Certificate in Peri-Operative Theatre Technology</li>
+      <li>Certificate in Peri-Operative Theatre Technology</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Johannes College of Medical and Health Sciences. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+  <!-- Goals Section -->
+  <section id="goals">
+    <h2>Our Goals</h2>
+    <p><strong>Mission:</strong> Provide holistic and high-quality training for competent and ethical healthcare delivery.</p>
+    <p><strong>Vision:</strong> To be a center of excellence in healthcare education globally.</p>
+    <ul>
+      <li>Equip students with practical and theoretical knowledge</li>
+      <li>Foster innovation and research</li>
+      <li>Promote ethical leadership</li>
+      <li>Engage communities through outreach</li>
+      <li>Align curriculum to global standards</li>
+    </ul>
+  </section>
+
+  <!-- Student Life Section -->
+  <section id="student-life">
+    <h2>Student Life</h2>
+    <p>Johannes College offers a vibrant student experience with clubs, events, mentorship, and counseling support.</p>
+    <a href="#apply" class="cta-button">Apply Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Johannes College of Medical and Health Sciences. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - Johannes College</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #003366; /* Dark Blue */
+            color: #FFD700; /* Gold */
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #FFD700;
+        }
+
+        /* Apply Section */
+        #apply {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #003366; /* Dark Blue */
+            color: #fff;
+        }
+
+        #apply h2 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #FFD700; /* Gold */
+        }
+
+        #apply p {
+            font-size: 1.2rem;
+            color: #fff; /* White text for better visibility */
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+
+        /* Form Section */
+        #application-form {
+            background-color: #f9f9f9; /* Light background for better contrast */
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #003366; /* Dark Blue Border */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        #application-form h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #003366; /* Dark Blue */
+        }
+
+        form label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #003366; /* Dark Blue */
+        }
+
+        form input,
+        form select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Submit Button */
+        form input[type="submit"] {
+            background-color: #FFD700; /* Gold */
+            color: #003366; /* Dark Blue */
+            cursor: pointer;
+            border: none;
+            padding: 14px 20px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #003366; /* Dark Blue */
+            color: #FFD700; /* Gold */
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #003366; /* Dark Blue */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #application-form {
+                padding: 20px;
+            }
+
+            #apply h2 {
+                font-size: 1.8rem;
+            }
+
+            #apply p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Johannes College of Medical and Health Sciences</h1>
+        </div>
+    </header>
+
+    <!-- Apply Section -->
+    <section id="apply">
+        <div class="container">
+            <h2>Apply to Johannes College</h2>
+            <p>Begin your journey with us. Fill out the form below to apply.</p>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section id="application-form">
+        <div class="container">
+            <h2>Application Form</h2>
+            <form id="applicationForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">-- Select Gender --</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="meanGrade">KCSE Mean Grade:</label>
+                <select id="meanGrade" name="meanGrade" required>
+                    <option value="">-- Select Grade --</option>
+                    <option>A</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B</option>
+                    <option>B-</option>
+                    <option>C+</option>
+                    <option>C</option>
+                    <option>C-</option>
+                    <option>D+</option>
+                    <option>D</option>
+                    <option>D-</option>
+                    <option>E</option>
+                </select>
+
+                <h3>Subject Scores</h3>
+                <label for="english">English:</label>
+                <input type="text" id="english" name="english" required>
+
+                <label for="kiswahili">Kiswahili:</label>
+                <input type="text" id="kiswahili" name="kiswahili" required>
+
+                <label for="mathematics">Mathematics:</label>
+                <input type="text" id="mathematics" name="mathematics" required>
+
+                <label for="biology">Biology:</label>
+                <input type="text" id="biology" name="biology" required>
+
+                <label for="chemistry">Chemistry:</label>
+                <input type="text" id="chemistry" name="chemistry" required>
+
+                <label for="physics">Physics:</label>
+                <input type="text" id="physics" name="physics">
+
+                <label for="history">History:</label>
+                <input type="text" id="history" name="history">
+
+                <label for="geography">Geography:</label>
+                <input type="text" id="geography" name="geography">
+
+                <label for="business">Business Studies:</label>
+                <input type="text" id="business" name="business">
+
+                <label for="agriculture">Agriculture:</label>
+                <input type="text" id="agriculture" name="agriculture">
+
+                <label for="computer">Computer Studies:</label>
+                <input type="text" id="computer" name="computer">
+
+                <label for="course">Preferred Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option>Nursing</option>
+                    <option>Pharmacy</option>
+                    <option>Clinical Medicine</option>
+                    <option>Nutrition & Dietetics</option>
+                    <option>Community Health</option>
+                    <option>Health Records</option>
+                </select>
+
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Johannes College of Medical and Health Sciences. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for form validation -->
+    <script>
+        document.getElementById("applicationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            let formValid = true;
+            let inputs = document.querySelectorAll("input[required], select[required]");
+
+            // Simple validation for required fields
+            inputs.forEach(function(input) {
+                if (!input.value) {
+                    formValid = false;
+                    input.style.borderColor = "red";
+                } else {
+                    input.style.borderColor = "#ddd";
+                }
+            });
+
+            if (formValid) {
+                alert("Application Submitted Successfully!");
+                this.reset(); // Reset form after successful submission
+            } else {
+                alert("Please fill in all required fields.");
+            }
+        });
+    </script>
+</body>
+</html>

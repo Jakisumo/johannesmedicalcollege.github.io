@@ -1,0 +1,266 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #dfe9f3, #ffffff);
+    color: #fdfdfd;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Application Form Section */
+  #application-form {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  #application-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0066cc;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: #0066cc;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #004999;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f1f1f1;
+    margin-top: 30px;
+  }
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #005b96;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #003f63;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0;
+  display: block;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid gold;
+}
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+  background: white;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #005b96;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #0077cc;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form select {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background: #005b96;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background: #0f8bd3;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  background: gold;
+  color: #1072aa;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background: #ffd700;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #077dc1;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  section {
+    margin: 10px;
+  }
+}
+/* Updated Section Styling */
+#home, #about, #programs, #goals, #student-life {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ffffff;
+  color: #003f63;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Special Styling for Home (Hero) */
+#home {
+  background-color: #003f63; /* Dark blue */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* CTA Button Update */
+.cta-button {
+  background-color: gold;
+  color: #003f63;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #ffd700;
+}
+
+/* Headings Color */
+#about h2, #programs h2, #goals h2, #student-life h2 {
+  color: #005b96;
+}
+
+/* Footer Background */
+footer {
+  background-color: #3d94c7;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
